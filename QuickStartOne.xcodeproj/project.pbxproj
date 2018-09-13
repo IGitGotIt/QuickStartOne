@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23075EA92149CA5E001BE4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23075EA82149CA5E001BE4A3 /* AppDelegate.swift */; };
+		23075EAB2149CA5E001BE4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23075EAA2149CA5E001BE4A3 /* ViewController.swift */; };
+		23075EAE2149CA5E001BE4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23075EAC2149CA5E001BE4A3 /* Main.storyboard */; };
+		23075EB02149CA5F001BE4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23075EAF2149CA5F001BE4A3 /* Assets.xcassets */; };
+		23075EB32149CA5F001BE4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23075EB12149CA5F001BE4A3 /* LaunchScreen.storyboard */; };
+		23075EBB2149CB18001BE4A3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23075EBA2149CB18001BE4A3 /* LoginViewController.swift */; };
+		23075EBD2149CB2B001BE4A3 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23075EBC2149CB2B001BE4A3 /* ChatViewController.swift */; };
+		23ACC5DA214AE94F005BFC91 /* ScreenCapturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ACC5D9214AE94F005BFC91 /* ScreenCapturer.swift */; };
+		F4C161507F0262C04BFB6FD4 /* Pods_QuickStartOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C00DEB15135DD3BCFCAEBBAE /* Pods_QuickStartOne.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17C52F829D48986A2E6EB2B6 /* Pods-QuickStartOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickStartOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuickStartOne/Pods-QuickStartOne.debug.xcconfig"; sourceTree = "<group>"; };
+		23075EA52149CA5E001BE4A3 /* QuickStartOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickStartOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		23075EA82149CA5E001BE4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23075EAA2149CA5E001BE4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23075EAD2149CA5E001BE4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23075EAF2149CA5F001BE4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23075EB22149CA5F001BE4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23075EB42149CA5F001BE4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23075EBA2149CB18001BE4A3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		23075EBC2149CB2B001BE4A3 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		23ACC5D7214AE0E7005BFC91 /* OpenTok.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenTok.framework; path = "../stitch-ios-quickstart/examples/Pods/OpenTok/OpenTok.framework"; sourceTree = "<group>"; };
+		23ACC5D9214AE94F005BFC91 /* ScreenCapturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenCapturer.swift; sourceTree = "<group>"; };
+		39B41ED2F412EC583A23543C /* Pods-QuickStartOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickStartOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuickStartOne/Pods-QuickStartOne.release.xcconfig"; sourceTree = "<group>"; };
+		C00DEB15135DD3BCFCAEBBAE /* Pods_QuickStartOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickStartOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23075EA22149CA5E001BE4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4C161507F0262C04BFB6FD4 /* Pods_QuickStartOne.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23075E9C2149CA5E001BE4A3 = {
+			isa = PBXGroup;
+			children = (
+				23075EA72149CA5E001BE4A3 /* QuickStartOne */,
+				23075EA62149CA5E001BE4A3 /* Products */,
+				4812093AF3F3A25CBB4A063D /* Pods */,
+				A617F12FCB77EA098E633CAE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		23075EA62149CA5E001BE4A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23075EA52149CA5E001BE4A3 /* QuickStartOne.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23075EA72149CA5E001BE4A3 /* QuickStartOne */ = {
+			isa = PBXGroup;
+			children = (
+				23075EA82149CA5E001BE4A3 /* AppDelegate.swift */,
+				23075EAA2149CA5E001BE4A3 /* ViewController.swift */,
+				23075EBA2149CB18001BE4A3 /* LoginViewController.swift */,
+				23075EBC2149CB2B001BE4A3 /* ChatViewController.swift */,
+				23ACC5D9214AE94F005BFC91 /* ScreenCapturer.swift */,
+				23075EAC2149CA5E001BE4A3 /* Main.storyboard */,
+				23075EAF2149CA5F001BE4A3 /* Assets.xcassets */,
+				23075EB12149CA5F001BE4A3 /* LaunchScreen.storyboard */,
+				23075EB42149CA5F001BE4A3 /* Info.plist */,
+			);
+			path = QuickStartOne;
+			sourceTree = "<group>";
+		};
+		4812093AF3F3A25CBB4A063D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17C52F829D48986A2E6EB2B6 /* Pods-QuickStartOne.debug.xcconfig */,
+				39B41ED2F412EC583A23543C /* Pods-QuickStartOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A617F12FCB77EA098E633CAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23ACC5D7214AE0E7005BFC91 /* OpenTok.framework */,
+				C00DEB15135DD3BCFCAEBBAE /* Pods_QuickStartOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23075EA42149CA5E001BE4A3 /* QuickStartOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23075EB72149CA5F001BE4A3 /* Build configuration list for PBXNativeTarget "QuickStartOne" */;
+			buildPhases = (
+				87D4DFF590A96EA7BF632BC5 /* [CP] Check Pods Manifest.lock */,
+				23075EA12149CA5E001BE4A3 /* Sources */,
+				23075EA22149CA5E001BE4A3 /* Frameworks */,
+				23075EA32149CA5E001BE4A3 /* Resources */,
+				BE660C08FA4E1B8D7812E22C /* [CP] Embed Pods Frameworks */,
+				89B9B7C27773258A9AD8DEBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickStartOne;
+			productName = QuickStartOne;
+			productReference = 23075EA52149CA5E001BE4A3 /* QuickStartOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23075E9D2149CA5E001BE4A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Jaideep Shah";
+				TargetAttributes = {
+					23075EA42149CA5E001BE4A3 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 23075EA02149CA5E001BE4A3 /* Build configuration list for PBXProject "QuickStartOne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23075E9C2149CA5E001BE4A3;
+			productRefGroup = 23075EA62149CA5E001BE4A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23075EA42149CA5E001BE4A3 /* QuickStartOne */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23075EA32149CA5E001BE4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23075EB32149CA5F001BE4A3 /* LaunchScreen.storyboard in Resources */,
+				23075EB02149CA5F001BE4A3 /* Assets.xcassets in Resources */,
+				23075EAE2149CA5E001BE4A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87D4DFF590A96EA7BF632BC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickStartOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89B9B7C27773258A9AD8DEBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickStartOne/Pods-QuickStartOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE660C08FA4E1B8D7812E22C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QuickStartOne/Pods-QuickStartOne-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_ROOT}/Nexmo-Stitch/Carthage/Build/iOS/Stitch.framework",
+				"${PODS_ROOT}/Nexmo-Stitch/Carthage/Build/iOS/Stitch.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/NexmoGRDB.swift/GRDB.framework",
+				"${PODS_ROOT}/NexmoWebRTC/WebRTC.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stitch.framework",
+				"${DWARF_DSYM_FOLDER_PATH}/Stitch.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuickStartOne/Pods-QuickStartOne-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23075EA12149CA5E001BE4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23075EBB2149CB18001BE4A3 /* LoginViewController.swift in Sources */,
+				23075EAB2149CA5E001BE4A3 /* ViewController.swift in Sources */,
+				23ACC5DA214AE94F005BFC91 /* ScreenCapturer.swift in Sources */,
+				23075EBD2149CB2B001BE4A3 /* ChatViewController.swift in Sources */,
+				23075EA92149CA5E001BE4A3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		23075EAC2149CA5E001BE4A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23075EAD2149CA5E001BE4A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23075EB12149CA5F001BE4A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23075EB22149CA5F001BE4A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23075EB52149CA5F001BE4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23075EB62149CA5F001BE4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23075EB82149CA5F001BE4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17C52F829D48986A2E6EB2B6 /* Pods-QuickStartOne.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGD69Q275W;
+				INFOPLIST_FILE = QuickStartOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.jaideep.QuickStartOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23075EB92149CA5F001BE4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39B41ED2F412EC583A23543C /* Pods-QuickStartOne.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MGD69Q275W;
+				INFOPLIST_FILE = QuickStartOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.opentok.jaideep.QuickStartOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23075EA02149CA5E001BE4A3 /* Build configuration list for PBXProject "QuickStartOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23075EB52149CA5F001BE4A3 /* Debug */,
+				23075EB62149CA5F001BE4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23075EB72149CA5F001BE4A3 /* Build configuration list for PBXNativeTarget "QuickStartOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23075EB82149CA5F001BE4A3 /* Debug */,
+				23075EB92149CA5F001BE4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23075E9D2149CA5E001BE4A3 /* Project object */;
+}
